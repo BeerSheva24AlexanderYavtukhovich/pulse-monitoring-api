@@ -8,7 +8,6 @@ public record JumpPulseData(long patientId, int oldValue, int newValue, long tim
         long patientId = jsonObj.getLong("patientId");
         int oldValue = jsonObj.getInt("oldValue");
         int newValue = jsonObj.getInt("newValue");
-
         long timestamp = jsonObj.getLong("timestamp");
         return new JumpPulseData(patientId, oldValue, newValue, timestamp);
 
